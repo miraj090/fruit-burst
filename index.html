@@ -4,6 +4,7 @@
     <meta charset="UTF-8 "/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fruit Burst</title>
+    <script src="https://kit.fontawesome.com/0846e2b0ab.js" crossorigin="anonymous"></script>
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@3.5.0/dist/full.css"
       rel="stylesheet"
@@ -24,11 +25,12 @@
     </script>
     
   </head>
+
   <body>
 
     <header class=" mx-5 lg:mx-28 md:mx-20">
 
-        <nav class="navbar flex  bg-[#F85559] rounded-full py-5 my-14 ">
+        <nav class="navbar flex lg:flex-row md:flex-row flex-row-reverse md:bg-[#F85559]  lg:bg-[#F85559] rounded-full py-5 my-14 ">
 
                 
                 <div class="lg:flex-1 "> 
@@ -59,7 +61,7 @@
                 </div>
                 <div class="flex-1">
                     <img src="images/logo.png" alt="">
-                  <a class="ps-4 text-white font-serif font-semibold text-4xl">Fruit Burst</a>
+                  <a class="ps-4 lg:text-white md:text-white text-black font-serif font-semibold text-4xl">Fruit Burst</a>
                 </div>
                 <div class="flex-1 form-control relative lg:block hidden">
                     <input type="text" placeholder="Search" class=" rounded-full input lg:w-80
@@ -68,6 +70,7 @@
                 </div>
         </nav>
 
+        
         <!-- banner -->
 
         <section class="mb-40">
@@ -80,7 +83,7 @@
                   <div class=" text-white">
                     <h1 class="mb-4 md:mb-7 lg:mb-10 text-2xl md:text-5xl lg:text-7xl font-serif font-extrabold ">Exotic tastes at your <br>
                       doorstep</h1>
-                    <p class="mb-2 md:mb-3 lg:mb-5 font-medium text-xs md:text-base lg:text-lg">We supply highly quality organic products
+                    <p class="mb-6 md:mb-3 lg:mb-5 font-medium text-xs md:text-base lg:text-lg">We supply highly quality organic products
                     </p>
                     <button class="btn bg-[#F85559] border-none text-white text-xs md:text-base lg:text-lg">Shop Now</button>
                   </div>
@@ -152,18 +155,121 @@
           </div>
 
           <div class="hidden lg:block">
-            <div class="  flex justify-between bg-[#f9f6f6] py-6  px-52 rounded-md absolute -bottom-72 right-[260px]">
+            <div class="  flex gap-16 bg-[#f9f6f6] py-6  px-20 rounded-md absolute -bottom-72 right-[200px]">
               <img src="images/fruit1.png"  alt="">
               <img src="images/fruit2.png"  alt="">
               <img src="images/fruit3.png"  alt="">
               <img src="images/fruit4.png"  alt="">
+              <img src="images/fruit5.png"  alt="">
             </div>
           </div>
         </section>
     </header>
 
 
-    <main class="">
+    <main class="mx-5 lg:mx-28 md:mx-20">
+
+      <!-- Meet the team-->
+      <section class="mb-28">
+        <div class="hero " style="background-image: url(images/banner1.png);">
+          <div class="hero-overlay  py-60 bg-opacity-90"></div>
+          <div class="hero-content text-center text-neutral-content">
+            <div class="py-14 ">
+              <h1 class="mb-5 text-5xl font-bold lg:block md:block hidden">Meet the team section</h1>
+              <h1 class="mb-5 text-5xl font-bold lg:hidden md:hidden block">Meet the team </h1>
+              <p class="mb-5">Meet our experts. Who are always working to <br> provide you healthy fruits.</p>
+              <!-- profiles -->
+              <div class="flex lg:flex-row md:flex-row flex-col">
+                <!-- 1 -->
+                <div>
+                  <div class="card w-66 ">
+                    <figure class="px-10 pt-10">
+                      <img src="/images/member1.png" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                      <h2 class="card-title">Miraj</h2>
+                      <p>Fruits Expert </p>
+                      <div >
+                        <ul class="flex gap-5">
+                          <li><a href=""><i class="fa-brands fa-facebook " style="color: #f85559;"></i></a></li>
+                          <li><a href=""><i class="fa-brands fa-twitter " style="color: #f85559;"></i></a></li>
+                          <li><a href=""><i class="fa-brands fa-linkedin" style="color: #f85559;"></i></a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!--  -->
+
+                <!-- 2 -->
+                <div>
+                  <div class="card w-66 ">
+                    <figure class="px-10 pt-10">
+                      <img src="/images/member2.png" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                      <h2 class="card-title">Muntaha</h2>
+                      <p>Fruits Expert </p>
+                      <div >
+                        <ul class="flex gap-5">
+                          <li><a href=""><i class="fa-brands fa-facebook " style="color: #f85559;"></i></a></li>
+                          <li><a href=""><i class="fa-brands fa-twitter " style="color: #f85559;"></i></a></li>
+                          <li><a href=""><i class="fa-brands fa-linkedin" style="color: #f85559;"></i></a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!--  -->
+
+                <!-- 3 -->
+                <div>
+                  <div class="card w-66 ">
+                    <figure class="px-10 pt-10">
+                      <img src="/images/member3.png" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                      <h2 class="card-title">Mahir</h2>
+                      <p>Fruits Expert </p>
+                      <div >
+                        <ul class="flex gap-5">
+                          <li><a href=""><i class="fa-brands fa-facebook " style="color: #f85559;"></i></a></li>
+                          <li><a href=""><i class="fa-brands fa-twitter " style="color: #f85559;"></i></a></li>
+                          <li><a href=""><i class="fa-brands fa-linkedin" style="color: #f85559;"></i></a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!--  -->
+
+                <!-- 4 -->
+                <div>
+                  <div class="card w-66 ">
+                    <figure class="px-10 pt-10">
+                      <img src="/images/member4.png" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                      <h2 class="card-title">Marya</h2>
+                      <p>Fruits Expert </p>
+                      <div >
+                        <ul class="flex gap-5">
+                          <li><a href=""><i class="fa-brands fa-facebook " style="color: #f85559;"></i></a></li>
+                          <li><a href=""><i class="fa-brands fa-twitter " style="color: #f85559;"></i></a></li>
+                          <li><a href=""><i class="fa-brands fa-linkedin" style="color: #f85559;"></i></a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!--  -->
+              </div>
+              
+              <!--  -->
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
   </body>
 </html>
