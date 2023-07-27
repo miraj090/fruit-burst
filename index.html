@@ -1,11 +1,114 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+<html  data-theme="light">
+  <head>
+    <meta charset="UTF-8 "/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.5.0/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+
+    <header class=" container mx-auto px-4">
+
+        <nav class="navbar flex  bg-[#F85559] rounded-full py-5 my-14 ">
+
+                
+                <div class="lg:flex-1 "> 
+                  <!-- for lg device -->
+                  
+                    <ul class=" menu-sm   hidden lg:flex   mt-3  text-white ">
+                      <li><a>Home</a></li>
+                      <li><a>About us</a></li>
+                      <li><a>Shop</a></li>
+                      <li><a>All Fruits</a></li>
+                    </ul>
+                  
+
+                  <!-- for sm device  -->
+                  <div class="dropdown block lg:hidden md:block pe-7">
+                    <label tabindex="0" class="  ">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 " fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" /></svg>
+                    </label>
+                    <ul tabindex="0" class="menu menu-sm dropdown-content  mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                      <li><a>Home</a></li>
+                      <li><a>About us</a></li>
+                      <li><a>Shop</a></li>
+                      <li><a>All Fruits</a></li>
+                      <input type="text" placeholder="Search" class="relative bg-slate-200 rounded-full input lg:w-80
+                        md:w-40 w-24"  />
+                    </ul>
+                  </div>
+                </div>
+                <div class="flex-1">
+                    <img src="images/logo.png" alt="">
+                  <a class="ps-4 text-white font-serif font-semibold text-4xl">Fruit Burst</a>
+                </div>
+                <div class="flex-1 form-control relative lg:block hidden">
+                    <input type="text" placeholder="Search" class=" rounded-full input lg:w-80
+                    md:w-40 w-24"  />
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 absolute top-3 left-72  " fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
+                </div>
+        </nav>
+
+        <!-- banner -->
+
+        <div class="carousel w-full">
+          <div id="slide1" class="carousel-item relative w-full">
+            <img src="/images/banner1.png" class="w-full" />
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide4" class="btn btn-circle">❮</a> 
+              <a href="#slide2" class="btn btn-circle">❯</a>
+            </div>
+          </div> 
+          <!-- 2 -->
+          <div id="slide2" class="carousel-item relative w-full">
+            <img src="/images/banner2.png" class="w-full" />
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide1" class="btn btn-circle">❮</a> 
+              <a href="#slide3" class="btn btn-circle">❯</a>
+            </div>
+          </div> 
+          <!-- 3 -->
+          <div id="slide3" class="carousel-item relative w-full">
+            <img src="/images/banner3.png" class="w-full" />
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide2" class="btn btn-circle">❮</a> 
+              <a href="#slide4" class="btn btn-circle">❯</a>
+            </div>
+          </div> 
+          <!-- 4 -->
+          <div id="slide4" class="carousel-item relative w-full">
+            <img src="/images/banner4.png" class="w-full" />
+            <div>
+              <p>sssss</p>
+            </div>
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide3" class="btn btn-circle">❮</a> 
+              <a href="#slide1" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+        </div>
+    </header>
+
+
+    <main>
+     
+    </main>
+  </body>
 </html>
